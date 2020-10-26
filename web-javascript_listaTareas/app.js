@@ -28,10 +28,13 @@ function editarEstaTarea(evento) {
 }
 
 function borrarEstaTarea(evento) {
-    let valorDevuelto = prompt("Seguro que quieres borrar esta tarea:",evento.target.parentElement.children[0].innerHTML);
+    let nombreTarea = evento.target.parentElement.children[0].innerHTML;
+    //let valorDevuelto = prompt("¿Seguro que quieres borrar esta tarea:?",evento.target.parentElement.children[0].innerHTML);
+    let valorDevuelto = confirm(`¿Seguro que quieres borrar esta tarea: "${nombreTarea}"?`);
     //target es la papelera (img)
     //target.parentElement es su padre, el <li>
-    if (valorDevuelto != null){
+    //if (valorDevuelto != null){
+    if (valorDevuelto == true){
     evento.target.parentElement.remove().innerHTML = valorDevuelto;
     }
 }
