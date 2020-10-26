@@ -21,14 +21,19 @@ function agregarTarea() {
 }
 
 function editarEstaTarea(evento) {
-    let valorDevuelto = prompt("Escribe el nuevo valor:",event.target.parentElement.children[0].innerHTML);
+    let valorDevuelto = prompt("Escribe el nuevo valor:",evento.target.parentElement.children[0].innerHTML);
+    if (valorDevuelto != null){
     evento.target.parentElement.children[0].innerHTML = valorDevuelto;
+    }
 }
 
 function borrarEstaTarea(evento) {
+    let valorDevuelto = prompt("Seguro que quieres borrar esta tarea:",evento.target.parentElement.children[0].innerHTML);
     //target es la papelera (img)
     //target.parentElement es su padre, el <li>
-    evento.target.parentElement.remove();
+    if (valorDevuelto != null){
+    evento.target.parentElement.remove().innerHTML = valorDevuelto;
+    }
 }
 
 function gestionarTecla(evento) {
