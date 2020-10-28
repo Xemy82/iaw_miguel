@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Tareas JS</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <label for="inputTarea">Introduce Tarea:</label>
-    <input id="inputTarea" type="text">
+    <input id="inputTarea" type="text" onkeypress="gestionarTecla(event)">
     <button onclick="agregarTarea()">Añadir</button>
     <h1>Lista de Tareas:</h1>
-    <ul id="listaTareas"></ul>
-    <script src="./app.js" type="application/javascript"/></script>
+    <ol id="listaTareas"></ol>
+    <script src="./app.js" type="application/javascript"></script>
 </body>
 </html>
