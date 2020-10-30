@@ -16,32 +16,12 @@ body{
     width: calc( 100% - 30px );
 }
 #listaTareas>li{
-    padding: 0px;
+    padding: 5px;
     list-style: none;
 }
 
+
 #listaTareas > li:hover {
     background-color: #ff000032;
-    padding: 0px;
 
-}
-
-ol{
-    padding-top: 0%;
-    padding-left: 0%;
-    padding-right: 50%;
-}
-
-input {
-    /*padding-left: 100%;*/
-    padding-right: 0%;     
-}
-
-#inputTarea{
-    margin-bottom: 5%;
-}
-
-#titulo{
-    padding-top: 300px;
-    margin-bottom: 200px;
 }
