@@ -33,7 +33,6 @@ function ocultarMenu() {
     menu.children[3].children[2].style.display = "none";
 
 
-
     /* ---- */
     menuMostrado = false;
 }
