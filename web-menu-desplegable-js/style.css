@@ -9,12 +9,9 @@
     padding: 5px;
 }
 
-<<<<<<< HEAD
-=======
 #menu{
     border-right: 1px solid black;
 }
->>>>>>> 44cf7eb8aa090c51ed1f5426935f5f78478ecf52
 
 #listaMenu > li > img{
     width: 30px;
@@ -25,20 +22,3 @@
     vertical-align: top;
     display: none;
 }
-<<<<<<< HEAD
-
-#menu{
-    border-right: 1px solid black;
-}
-/*
-
-#listaMenu{
-    display: none;
-}
-
-#menu:hover > ul{
-    display: block;
-}
-*/
-=======
->>>>>>> 44cf7eb8aa090c51ed1f5426935f5f78478ecf52
