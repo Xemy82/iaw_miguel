@@ -15,7 +15,7 @@ function mostrarMenu() {
     console.log(menu);
     menu.children[0].children[1].style.display = "inline";
     menu.children[1].children[3].style.display = "inline";
-    menu.children[2].children[2].style.display = "inline";
+    menu.children[2].children[2].style.display = "inline-block";
     menu.children[3].children[1].style.display = "inline";
 
 
