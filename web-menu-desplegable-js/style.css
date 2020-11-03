@@ -9,9 +9,6 @@
     padding: 5px;
 }
 
-#menu{
-    border-right: 1px solid black;
-}
 
 #listaMenu > li > img{
     width: 30px;
@@ -22,3 +19,17 @@
     vertical-align: top;
     display: none;
 }
+
+#menu{
+    border-right: 1px solid black;
+}
+/*
+
+#listaMenu{
+    display: none;
+}
+
+#menu:hover > ul{
+    display: block;
+}
+*/

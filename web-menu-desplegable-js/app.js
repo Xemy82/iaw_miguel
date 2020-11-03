@@ -14,9 +14,9 @@ function mostrarMenu() {
     let menu = document.getElementById("listaMenu");
     console.log(menu);
     menu.children[0].children[1].style.display = "inline";
-    menu.children[1].children[1].style.display = "inline";
+    menu.children[1].children[3].style.display = "inline";
     menu.children[2].children[1].style.display = "inline";
-    menu.children[3].children[1].style.display = "inline";
+    menu.children[3].children[2].style.display = "inline";
 
 
     /* ---- */
@@ -26,10 +26,11 @@ function mostrarMenu() {
 function ocultarMenu() {
     /* codigo para ocultar el menu */
     let menu = document.getElementById("listaMenu");
+    console.log(menu);
     menu.children[0].children[1].style.display = "none";
-    menu.children[1].children[1].style.display = "none";
+    menu.children[1].children[3].style.display = "none";
     menu.children[2].children[1].style.display = "none";
-    menu.children[3].children[1].style.display = "none";
+    menu.children[3].children[2].style.display = "none";
 
 
 
