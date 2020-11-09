@@ -1,0 +1,94 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 1px;
+    grid-auto-rows: minmax(200px 200px);
+}
+.vacio {
+    grid-column: 1/2;
+    grid-row: 1/4;
+}
+.dias {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column: 2/7;
+    grid-row: 1/2;
+}
+.hora {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-column: 1/2;
+    grid-row: 4/11;
+    padding: 1em;
+}
+.notal {
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+.notam {
+    grid-column: 3/4;
+    grid-row: 2/4;
+}
+.notax {
+    grid-column: 4/5;
+    grid-row: 2/4;
+}
+.notaj {
+    grid-column: 5/6;
+    grid-row: 2/4;
+}
+.notav {
+    grid-column: 6/7;
+    grid-row: 2/4;
+}
+.natl {
+    grid-column: 2/3;
+    grid-row: 4/7;
+}
+.matm {
+    grid-column: 3/4;
+    grid-row: 4/6;
+}
+.lenm {
+    grid-column: 3/4;
+    grid-row: 6/8;
+}
+.ingx {
+    grid-column: 4/5;
+    grid-row: 5/8;
+}
+.Socj {
+    grid-column: 5/6;
+    grid-row: 5/7;
+}
+.lenv {
+    grid-column: 6/7;
+    grid-row: 4/7;
+}
+.matl {
+    grid-column: 2/3;
+    grid-row: 9/11;
+}
+.gimm {
+    grid-column: 3/4;
+    grid-row: 9/11;
+}
+.socx {
+    grid-column: 4/5;
+    grid-row: 9/11;
+}
+.recreo {
+    grid-column: 2/7;
+    grid-row: 8/9;
+}
+.grid > div {
+    background: #ecf0f1;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.grid div:hover {
+    border: 1px;
+}

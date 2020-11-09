@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Horario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="grid">
+        <div class="vacio">Horario</div>
+        <div>Lunes</div>
+        <div>Martes</div>
+        <div>Miercoles</div>
+        <div>Jueves</div>
+        <div>Viernes</div>        
+        <div class="notal">Notas</div>
+        <div class="notam">Notas</div>
+        <div class="notax">Notas</div>
+        <div class="notaj">Notas</div>
+        <div class="notav">Notas</div>
+        <div>15:30-16:20</div>
+        <div class="natl">Naturales</div>
+        <div class="matm">Matemáticas</div>
+        <div>Lenguaje</div>
+        <div>Frances</div>
+        <div class="lenv">Lenguaje</div>
+        <div>16:25-17:15</div>
+        <div class="ingx">Ingles</div>
+        <div class="Socj">Sociales</div>
+        <div>17:20-18:10</div>
+        <div class="lenm">Lenguaje</div>
+        <div>18:15-19:05</div>
+        <div>Musica</div>
+        <div>Naturales</div>
+        <div>Frances</div>
+        <div>19:05-19:30</div>
+        <div>19:30-20:20</div>
+        <div>Ingles</div>
+        <div class="matl">Matemáticas</div>
+        <div class="gimm">Gimnasia</div>
+        <div class="socx">Sociales</div>
+        <div>Sociales</div>
+        <div>20:25-21:15</div>
+        <div>Musica</div>
+        <div>Frances</div>
+        <div class="recreo">Recreo</div>
+
+    </div>
+
+</body>
+
+</html>
