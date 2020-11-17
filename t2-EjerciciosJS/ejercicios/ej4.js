@@ -6,10 +6,11 @@ La función Math.random() retorna un punto flotante ("punto flotante" es otra ma
 La función Math.floor(num) devuelve el número entero más alto por debajo del parámetro pasado num. Esto es, le quita los decimales a un número decimal.
  
 ¿Cuál sería el resultado si multiplicamos el número que sale de Math.random() por 5?.
-Evidentemente sería un número aleatorio, pero... ¿cuál sería su valor mínimo?
---> Respuesta: 
+Evidentemente sería un número aleatorio, pero... 
+¿cuál sería su valor mínimo?
+--> Respuesta: 0
 ¿Y su valor máximo?
---> Respuesta:
+--> Respuesta: 4.9999
 
 Ejercicio:
 Dado lo anterior, completa la función generarAleatorio(max) que pasado un número máximo nos devuelva un número entero entre [0 y max] ambos incluidos. Para ello debes usar la función Math.random y la función Math.floor().
@@ -17,17 +18,14 @@ Así console.log(generarAleatorio(7)) debería imprimir por la consola un númer
 */
 
 function geneararAleatorio(max) {
-    let resultado;
-    // Completa el código entre los comentarios, tendrás que conseguir
-    // que dentro de la variable resultado se cree un numero aleatorio
-    // entre 0 y max
+        
+    let resultado = Math.floor(Math.random()*5);
 
+    //let resultado = Math.floor(resultado1);
 
-
-    //
     return resultado;
+    
 }
-
 
 // Esto es para que compruebes si te funciona, imprimirá 20 veces en la consola el número
 // generado por tu función, deberían haber ceros, unos, doses y treses.

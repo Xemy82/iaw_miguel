@@ -1,6 +1,7 @@
 // valor 1
 alert("Empieza el ejercicio 1");
 // Crea 2 variables numéricas
+
 var num1 = 5;
 var num2 = 4;
 
@@ -18,7 +19,8 @@ alert(num1 * num2);
 
 // Cambia el valor de la segunda variable a 0.
 
-alert(num1 / num2);
+var num2 = 0;
 
 // Imprime la division de ambas.
 
+document.write(num1 / num2);

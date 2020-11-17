@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pruebas</title>
+</head>
+<body>
+    <script>
+    var nombre = true;
+    console.log(nombre);
+    document.write("VARIABLES ARRAY");
+    document.write("<br>");
+    var amigos = ["Luis", "Pedro", "Maria"];
+    document.write("<br>");
+    document.write(amigos);
+    document.write("<br>");
+    document.write("LONGITUD CON amigos.lenght <br>");
+    document.write(amigos.length);
+    document.write("<br>");
+    document.write("SE SUMA FERNANDO A LA LISTA [amigos.length] = \"Fernando\"; <br>");
+    amigos[amigos.length] = "Fernando";
+    document.write(amigos);
+    document.write("<br>");
+    document.write("LOS SEPARA CON amigos.join <br>");
+    document.write(amigos.join("-"));
+    document.write("<br>");
+    document.write("ORDENA ALFABETICAMENTE CON amigos.sort <br>");
+    document.write(amigos.sort());
+    document.write("<br>");
+    document.write("ORDENA DEL REVES CON amigos.reverse <br>");
+    document.write(amigos.reverse());
+    document.write("<br>");
+    document.write("-----FUNCIONES CON PARAMETROS------");
+    document.write("<br>");
+    
+    
+
+    function suma3(num1, num2, num3){
+        document.write(num1 + num2 + num3);
+    }
+
+    suma3(10, 15, 25);
+
+    document.write("<br>");
+
+    function suma1(num1, num2, num3){
+        return num1 + num2 + num3;
+    }
+
+    document.write(suma1(10, 20, 25));
+
+    document.write("<br>");
+
+   
+    var nume2 = 20;
+    var nume3 = 30;
+
+    function suma2(max){
+
+        var nume1 = 10;
+        return nume1;
+       //document.write(nume1 + nume2 + nume3);
+    }
+
+    document.write(suma2());
+    //suma2();
+
+    document.write("<br>");
+
+    document.write("-----NUMERO ALEATORIO------");
+
+    document.write("<br>");
+
+    
+
+    function geneararAleatorio(max) {
+        
+        let resultado = Math.floor(Math.random()*5);
+
+        //let resultado = Math.floor(resultado1);
+
+        return resultado;
+        
+
+    }
+    //document.write(geneararAleatorio());
+
+    document.write("<br>");
+
+    for (let index = 0; index < 20; index++) {
+        console.log(geneararAleatorio(3));
+    }
+    
+
+    document.write("<br>");
+
+
+    for( let x =0; x < 2; x++){
+        document.write(x);
+    }
+    
+    document.write("<br>");
+
+    document.write("<br>");
+
+    var numero = 2;
+
+    document.write("Esto es de tipo: " + typeof numero);
+
+    document.write("<br>");
+
+//Este operador se puede ejecutar también como una función con paréntesis.    
+//typeof variable1 es equivalente a typeof(variable1)
+
+    document.write("Esto es de tipo: " +typeof ("Hola"));
+
+    document.write("<br>");
+
+
+    function suma(op1, op2) {
+        let resultado = undefined;
+        if ( typeof op1 !== 'number' || typeof op2 !== 'number') {
+            throw `error funcion suma(parametro1, parametro2):
+        Ambos parámetros deben ser número: 
+        -El primer parámetro es ${typeof op1}
+        -El segundo parámetro es ${typeof op2}`
+        }else{
+        resultado = op1+op2;
+        }
+        alert("Resultado: "+resultado);
+        return resultado;
+    }
+    suma(5, 7);
+
+
+    </script>
+</body>
+</html>
