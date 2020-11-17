@@ -32,7 +32,22 @@ deberá mostrar error en la edad y en la propiedad "casado".
 
 */
 
-function comprobarPersona(p) {
-
+let p = { 
+  "nombre": "Juan Luis",
+  "apellido": "Guerra",
+  "edad": 63,
+  "casado": true
 }
 
+function comprobarPersona() {
+  if ( typeof p.nombre !== 'string'){
+    console.error("Nombre esta como tipo: " + typeof p.nombre + " y se esperaba un string.");
+  }else if ( typeof p.apellido !== 'string'){
+    console.error("Apellido esta como tipo: " + typeof p.apellido + " y se esperaba un string.");
+  }else if(typeof p.edad !== 'number'){
+    console.error("Edad esta como tipo: " + typeof p.edad + " y se esperaba un number.");
+  }else if(typeof p.casado !== 'boolean'){
+    console.error("Casado esta como tipo: " + typeof p.casado + " y se esperaba un boleano.");
+  }  
+}
+comprobarPersona(p);

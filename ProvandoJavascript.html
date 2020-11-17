@@ -5,17 +5,23 @@
     <title>pruebas</title>
 </head>
 <body>
-    <div style="background-color: beige; border: solid 1px; width: 50%; height: 70%; float: right; text-align: center;">
+    <div style="background-color: beige; border: solid 1px; width: 50%; height: 70%; float: right; display: flex; text-align: center;">
         
         <form action="">
             <h1>CALCULADORA</h1>
             <input type="text" id="numcal1">
             <input type="text" id="numcal2">
-            <br>
-            <input type="submit" class="btn btn-outline-dark" value="Sumar" onclick="alert(sumar());">
+            <select id="operacion">
+                <option value="suma">Suma</option>
+                <option value="resta">Resta</option>
+                <option value="multi">Multiplicacion</option>
+            </select>
+            <input type="submit" class="btn btn-outline-dark" value="Calcular" onclick="alert(calcular());">
         </form>
     </div>
     <script>
+/*
+    }
     function sumar(){
         var uno = parseInt(document.getElementById("numcal1").value);
         var dos = parseInt(document.getElementById("numcal2").value);
@@ -23,7 +29,14 @@
         //return resultado;
         return uno + dos;
     }
-    
+*/   
+    function calcular(){
+            var uno = parseInt(document.getElementById("numcal1").value);
+            var dos = parseInt(document.getElementById("numcal2").value);
+            return resultado;
+        }
+
+
     var nombre = true;
     console.log(nombre);
     document.write("VARIABLES ARRAY");
@@ -101,14 +114,33 @@
         
 
     }
-    //document.write(geneararAleatorio());
+    document.write(geneararAleatorio());
 
     document.write("<br>");
-
+/*
     for (let index = 0; index < 20; index++) {
         console.log(geneararAleatorio(3));
     }
+*/  
+
+    function geneararAleatorio(max) {
+        
+        let resultado = ((Math.floor(Math.random() * (3 - 1 + 1)) + 1)*1000);
     
+        //let resultado = Math.floor(resultado1);
+    
+        return resultado;
+        
+    }
+    
+    // Esto es para que compruebes si te funciona, imprimirá 20 veces en la consola el número
+    // generado por tu función, deberían haber ceros, unos, doses y treses.
+    for (let index = 0; index < 20; index++) {
+        //console.log(geneararAleatorio(3));
+        document.write(geneararAleatorio(3) + "<br>");
+    }
+
+
 
     document.write("<br>");
 
@@ -126,6 +158,9 @@
     document.write("Esto es de tipo: " + typeof numero);
 
     document.write("<br>");
+
+
+//Ejer 5
 
 //Este operador se puede ejecutar también como una función con paréntesis.    
 //typeof variable1 es equivalente a typeof(variable1)
@@ -150,6 +185,29 @@
     }
     //suma(7, "casas");
 
+    //Ejer 6
+
+    let objeto1 = {
+        "parametro1": "hola",
+        "parametro2": 10
+    }
+
+    let objeto2 = objeto1;
+
+    objeto2.parametro1 = "Holala";
+
+    console.log(objeto2);
+    console.log(objeto1);
+
+        if ( typeof objeto1.parametro1 !== 'number' ) {
+            console.error("Se esperaba un number.");
+        }
+
+    document.write("<br>");
+
+    //Numero entero aleatorio
+
+    document.write((Math.floor(Math.random() * (3 - 1 + 1)) + 1)*1000);
 
     </script>
 </body>
