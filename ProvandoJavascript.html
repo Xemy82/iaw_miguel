@@ -5,7 +5,25 @@
     <title>pruebas</title>
 </head>
 <body>
+    <div style="background-color: beige; border: solid 1px; width: 50%; height: 70%; float: right; text-align: center;">
+        
+        <form action="">
+            <h1>CALCULADORA</h1>
+            <input type="text" id="numcal1">
+            <input type="text" id="numcal2">
+            <br>
+            <input type="submit" class="btn btn-outline-dark" value="Sumar" onclick="alert(sumar());">
+        </form>
+    </div>
     <script>
+    function sumar(){
+        var uno = parseInt(document.getElementById("numcal1").value);
+        var dos = parseInt(document.getElementById("numcal2").value);
+        //var resultado = numcal1 + numcal2;
+        //return resultado;
+        return uno + dos;
+    }
+    
     var nombre = true;
     console.log(nombre);
     document.write("VARIABLES ARRAY");
@@ -130,7 +148,7 @@
         alert("Resultado: "+resultado);
         return resultado;
     }
-    suma(5, 7);
+    //suma(7, "casas");
 
 
     </script>
