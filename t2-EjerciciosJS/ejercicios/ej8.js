@@ -10,7 +10,6 @@ function limpia(elemento)
 elemento.value = "";
 }
 
-
 function crearCampo(){
     var inputo = document.createElement("input");
     //inputo.type = 'text';
