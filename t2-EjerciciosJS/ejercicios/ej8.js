@@ -5,6 +5,12 @@ alert("Empieza el ejercicio 8");
 //Al hacer click sobre el input, su contenido se tendrá que borrar.
 //Al hacer click sobre el botón, tendrá que mostrar un alert con el contenido del input que está a su lado.
 //Para rellenar el los inputs, tendréis que hacer uso del tabulador.
+function limpia(elemento)
+{
+elemento.value = "";
+}
+
+
 function crearCampo(){
     var inputo = document.createElement("input");
     //inputo.type = 'text';
@@ -16,26 +22,17 @@ function crearCampo(){
 }
 crearCampo();
 
-
-
-
 /*
 function mostrar1(){
     var uno = (document.getElementById("INPUT").value);
-    //var resultado = numcal1 + numcal2;
-    //return resultado;
     return uno;
 }
 */
 function mostrar2(){
     var uno = document.getElementById("campo2").value;
-    //var resultado = numcal1 + numcal2;
-    //return resultado;
     return uno;
 }
 function mostrar3(){
     var uno = document.getElementById("campo3").value;
-    //var resultado = numcal1 + numcal2;
-    //return resultado;
     return uno;
 }
