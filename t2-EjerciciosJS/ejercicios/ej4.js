@@ -19,7 +19,7 @@ Así console.log(generarAleatorio(7)) debería imprimir por la consola un númer
 
 function geneararAleatorio(max) {
         
-    let resultado = Math.floor(Math.random()*5);
+    let resultado = ((Math.floor(Math.random() * (5 - 1)))*1);
 
     //let resultado = Math.floor(resultado1);
 

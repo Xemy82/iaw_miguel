@@ -6,7 +6,7 @@ alert("Empieza el ejercicio 3");
 
 function cierto(){
     //document.write(verdad + "<br>");
-    return "True <br>";
+    return true + "<br>";
 }
 
 document.write(cierto());

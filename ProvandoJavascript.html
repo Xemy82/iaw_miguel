@@ -11,17 +11,18 @@
             <h1>CALCULADORA</h1>
             <input type="text" id="numcal1">
             <input type="text" id="numcal2">
-            <select id="operacion">
-                <option value="suma">Suma</option>
-                <option value="resta">Resta</option>
-                <option value="multi">Multiplicacion</option>
-            </select>
-            <input type="submit" class="btn btn-outline-dark" value="Calcular" onclick="alert(calcular());">
+<!--            <input type="submit" class="btn btn-outline-dark" value="Suma" onclick="alert(sumar());">  -->
+            <button onclick="alert(sumar())">Mostrar</button>
         </form>
     </div>
+    <div id="parent">
+        <button onclick="alert(mostrar())">Mostrar</button>
+    </div>
+    
+<!-- <input type="submit" class="btn btn-outline-dark" value="Suma" onclick="alert(campo1());">    -->
     <script>
-/*
-    }
+    document.body.onload = addElement;
+
     function sumar(){
         var uno = parseInt(document.getElementById("numcal1").value);
         var dos = parseInt(document.getElementById("numcal2").value);
@@ -29,14 +30,26 @@
         //return resultado;
         return uno + dos;
     }
-*/   
+    sumar();
+
+    function crearCampo(){
+        var inputo = document.createElement("input");
+        //inputo.type = 'text';
+        inputo.setAttribute("type", "text");
+        var divparent = document.getElementById("parent");
+        divparent.appendChild(inputo);
+        //var mostara = divparent        
+        //return ;divparent
+    }
+    crearCampo();
+/*   
     function calcular(){
             var uno = parseInt(document.getElementById("numcal1").value);
             var dos = parseInt(document.getElementById("numcal2").value);
             return resultado;
         }
 
-
+*/
     var nombre = true;
     console.log(nombre);
     document.write("VARIABLES ARRAY");
@@ -98,11 +111,11 @@
 
     document.write("<br>");
 
+//Ejer4
+
     document.write("-----NUMERO ALEATORIO------");
 
-    document.write("<br>");
-
-    
+document.write("<br>");
 
     function geneararAleatorio(max) {
         
@@ -114,15 +127,15 @@
         
 
     }
-    document.write(geneararAleatorio());
+    //document.write(geneararAleatorio());
 
-    document.write("<br>");
-/*
     for (let index = 0; index < 20; index++) {
         console.log(geneararAleatorio(3));
     }
-*/  
 
+document.write("<br>");
+
+  
     function geneararAleatorio(max) {
         
         let resultado = ((Math.floor(Math.random() * (3 - 1 + 1)) + 1)*1000);
@@ -141,17 +154,15 @@
     }
 
 
-
-    document.write("<br>");
+document.write("<br>");
 
 
     for( let x =0; x < 2; x++){
         document.write(x);
     }
     
-    document.write("<br>");
+document.write("<br>");
 
-    document.write("<br>");
 
     var numero = 2;
 
@@ -167,7 +178,8 @@
 
     document.write("Esto es de tipo: " +typeof ("Hola"));
 
-    document.write("<br>");
+
+document.write("<br>");
 
 
     function suma(op1, op2) {
@@ -203,7 +215,7 @@
             console.error("Se esperaba un number.");
         }
 
-    document.write("<br>");
+document.write("<br>");
 
     //Numero entero aleatorio
 
