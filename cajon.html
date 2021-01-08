@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button onclick="alert(())">Mostrar</button>
+    <div id="div1"></div>
+    
+<script>
+    document.body.onload = addElement;
+
+    function addElement () { 
+        // crea un nuevo div 
+        // y añade contenido 
+        var newDiv = document.createElement("input"); 
+        //var newContent = document.createTextNode("Hola"); 
+        //newDiv.appendChild(newContent); //añade texto al div creado. 
+        
+        // añade el elemento creado y su contenido al DOM 
+        var currentDiv = document.getElementById("div1"); 
+        document.body.insertBefore(newDiv, currentDiv); 
+    }
+</script>
+</body>
+</html>

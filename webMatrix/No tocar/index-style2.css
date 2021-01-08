@@ -1,0 +1,118 @@
+* {
+padding:0px;
+margin:0px;
+}
+
+#menu{
+
+width:0px;
+font-family:Arial,Helvetica,sans-serif;
+text-decoration:none;
+}
+	
+#menu{
+margin:0px;
+width:0px;
+font-family:Arial,Helvetica,sans-serif;
+text-decoration:none;
+}
+.nav li  {
+color:white;
+text-decoration:none;
+display:block;
+text-decoration:none;
+}
+#menu ul li{
+font-size:80%;
+margin-top:15px;
+font-family:tahoma;
+font-size:18px;
+background-color:#FFFFF;
+width:118px;
+padding-top:5px;
+padding-bottom:5px;
+border-radius:50px 10px 50px 10px;
+padding-left:20px;
+box-shadow:0px 5px 10px #939393;
+-webkit-transition:padding-left 0.5s;
+color:white;
+text-decoration:none;
+}
+div#menu li:hover{
+background-color:#FFFFF;
+padding-left:60PX;
+text-decoration:none;
+}
+.nav li  {
+text-decoration:none;
+}
+.nav li ul{
+display:none;
+position:absolute;
+min-width:140px;
+text-decoration:none;
+}
+.nav li:hover > ul{
+display:block;
+text-decoration:none;
+}
+.nav li ul li{
+position:relative;
+}
+.nav li ul li ul{ 
+background-color:#FFFFFf;
+right:-300px;
+top:-45px;
+text-decoration:none;
+}
+
+------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
+
+* {
+padding:0px;
+margin:0px;
+}
+
+
+a{
+	color: WHITE;     (PARA CAMBIAR EL COLOR DE LAS LETRAS DEL MENU SI ULGUNA NO CUMPLE DEL TODO LOS REQUISITOS)
+}
+
+#divContenedor{    
+	position: absolute;
+	right: 350px;
+	width: 300px;
+	top: 20px;
+}
+.nav a li:hover .clsContenedor{
+		width:83%;
+	}
+	.clsImagen:hover .clsContenedor{
+		width: 500px;
+	}
+	.clsContenedor{
+	margin:0px;
+width:0px;
+font-family:Arial,Helvetica,sans-serif;
+           -webkit-transition: all 0.3s ease-in;
+			-moz-transition: all 0.3s ease-in;
+				-o-transition: all 0.3s ease-in;
+					transition: all 0.3s ease-in;
+		position: fixed;
+		background: #FFFFF;
+		right:0%;
+		top: 6%;
+		width: 0%;
+		height: 100%;
+		overflow: hidden;
+		box-shadow: 0px 0px 0px #939393;
+		color: Blue;
+	}
+		.clsTitulo,.clsContenido{
+			margin-left: 5%;
+			width: 70%;
+		}
+			.clsContenido p{
+				text-align: justify;
+			}
