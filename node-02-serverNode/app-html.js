@@ -1,13 +1,19 @@
 const http = require('http');
 
 const hostname ="127.0.0.1";
-const puerto = 3000;
+const puerto = 3001;
 
 const servidor = http.createServer(
     function (peticion, respuesta){
         respuesta.statusCode = 200;
-        respuesta.setHeader('Content-Type','text/plain');
-        respuesta.end("Hola mundo");
+        respuesta.setHeader('Content-Type','text/html');
+        respuesta.end(
+        `<html>
+        <head>
+            <title>Pagina web</title>
+        <body><H1>Hola mundo<H1></body>
+        </html>`
+        );
     }
 );
 
