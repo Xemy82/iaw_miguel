@@ -7,6 +7,11 @@ web.get('/',
         res.send('Hola mundo');
     }
 );
+web.get('/adios',
+    function(req, res){
+        res.send('Adios mundo');
+    }
+);
 
 web.listen(puerto,
     function(){
