@@ -10,7 +10,7 @@ app.set('views',dirVistas);
 
 app.get('/', function (req, res) {
  res.render('paginas/inicio',
-  { texto: "Hola Mundo" });
+  { texto: "Hola Mundo", ip: req.ip } );
 });
 
 app.get('/style.css', function(req, res) {
