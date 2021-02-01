@@ -14,7 +14,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/style.css', function(req, res) {
-  let rutaCSS=path.join(__dirname,'css','style.css');
+  let rutaCSS = path.join(__dirname,'css','style.css');
   res.sendFile(rutaCSS);
  });
 
