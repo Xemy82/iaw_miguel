@@ -9,11 +9,14 @@ app.set('view engine', 'ejs');
 app.set('views',dirVistas);
 
 app.get('/', function (req, res) {
-
  res.render('paginas/inicio',
   { texto: "Hola Mundo" });
 });
 
+app.get('/style.css', function(req, res) {
+  let rutaCSS=path.join(__dirname,'css','style.css');
+  res.sendFile(rutaCSS);
+ });
 
 app.listen(app.get('puerto'),
  function () {
